@@ -1,2 +1,5 @@
+site_name: Inventory Pro Docs
+repo_url: https://github.com/devdogio/Inventory-Pro-Docs
+site_url: https://devdog.io
 markdown_extensions:
  - admonition
