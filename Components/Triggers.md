@@ -21,4 +21,4 @@ Triggers can be used to trigger a window and bound them to a location in the wor
 
 ## Integrating triggers
 
-Triggers can of course be re-used for other aspects of your game. In many cases you'll want to receive a callback when a trigger is used or unused; This can be done using the  [trigger callbacks interface.](TriggerCallbacks.md)
+Triggers can of course be re-used for other aspects of your game. In many cases you'll want to receive a callback when a trigger is used or unused; This can be done using the  [trigger callbacks interface.](../API/TriggerCallbacks.md)

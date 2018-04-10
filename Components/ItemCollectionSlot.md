@@ -1,6 +1,6 @@
 # Item Collection Slot
 
-As the name implies a slot is a slot in a collection which contains an Inventory Pro item. The ItemCollectionSlotUI wraps UI code around the [InventoryItemBase](CreatingItemType.md), the standard item type.
+As the name implies a slot is a slot in a collection which contains an Inventory Pro item. The ItemCollectionSlotUI wraps UI code around the [InventoryItemBase](../API/CreatingItemType.md), the standard item type.
 
 `InventoryItemBase` Default abstract inventory item with no connections to UI elements.
 

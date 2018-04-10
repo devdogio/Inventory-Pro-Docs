@@ -4,7 +4,7 @@
 
 The inventory UI can be used multiple times to allow the user to have multiple inventories.
 
-Each inventory can also be restricted to specific types. The InventoryUI script inherits from the ItemCollectionBase class, which is the default  [collection class.](Collections.md)
+Each inventory can also be restricted to specific types. The InventoryUI script inherits from the ItemCollectionBase class, which is the default  [collection class.](../API/Collections.md)
 
 All your collections have a collection name, this name is used to identify the collection, so make sure it’s unique, that’s up to you to manage.
 
@@ -24,7 +24,7 @@ All your collections have a collection name, this name is used to identify the c
 
 ![](Assets/InventoryUI.png)
 
-For more information on how to add and remove items from the inventory (or any other collection),  [have a look here.](AddingRemovingItems.md)
+For more information on how to add and remove items from the inventory (or any other collection),  [have a look here.](../API/AddingRemovingItems.md)
 
 ## Multiple inventories
 

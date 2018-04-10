@@ -2,7 +2,7 @@
 
 Once you've enabled the  [UMA integration](GettingStarted.md) the main editor will update and show the new UMA specific item types, as well as the UMA filters.
 
-![](Assets/ItemFilter.md)
+![](Assets/ItemFilter.png)
 
 ## How does it work?
 
