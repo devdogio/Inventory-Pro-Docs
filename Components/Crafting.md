@@ -22,6 +22,6 @@ The crafting window requires quite a bit of configuration, as you can see below,
 | Crafting items collection | The collection used to search for items that can be used to craft the item. |
 | --- | --- |
 | Crafting reward items collection | The collection in which the reward items of the craft will be stored. |
-| Progress share setting | The share setting allows you to share progress between triggers or seperate the progress completely. For example if you were to have 2 campfires the share setting would have the following effect:Default: Progress is per instance, each campfire maintains it's own progress.Force single instance per category: Only 1 craft can be active per categoryForce single instance: Only 1 craft can be active at a time. |
+| Progress share setting | The share setting allows you to share progress between triggers or separate the progress completely. For example if you were to have 2 campfires the share setting would have the following effect:Default: Progress is per instance, each campfire maintains it's own progress.Force single instance per category: Only 1 craft can be active per categoryForce single instance: Only 1 craft can be active at a time. |
 
 ![](Assets/CraftingStandardTriggerer.png)
