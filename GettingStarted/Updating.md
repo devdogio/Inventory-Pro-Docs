@@ -2,9 +2,4 @@ It is always recommended to use the following upgrade guide when a new version o
 
 To overcome this problem the upgrade guide can be used. This will retain all references to your original scripts and items.
 
-<div class="admonition attention">
-	<p class="first admonition-title">Attention</p>
-	<p class="last">
-		Always backup before installing an update.
-	</p>
-</div>
+.. note:: Always backup before installing an update.
