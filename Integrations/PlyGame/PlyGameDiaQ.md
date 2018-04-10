@@ -2,8 +2,8 @@
 
 For quests you can set a DiaQ reward using the Inventory Pro provider. Select the item you wish to reward the player when completing the value. When selecting the reward for the player, choose the Inventory Pro provider. Next you'll see the reward type.
 
--   Currency ( Gold, Silver, Etc the values that you defined in the  [currency editor](http://devdog.nl/documentation/currency-editor/)  )
--   Item ( Any Inventory Pro item created using the  [Item editor](http://devdog.nl/documentation/main-editor/)  )
+-   Currency ( Gold, Silver, Etc the values that you defined in the  [currency editor](../../Editors/CurrencyEditor.md)  )
+-   Item ( Any Inventory Pro item created using the  [Item editor](../../Editors/ItemEditor.md)  )
 
 ![](Assets/DiaqStep1.png)
 

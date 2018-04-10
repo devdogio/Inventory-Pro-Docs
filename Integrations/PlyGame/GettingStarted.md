@@ -8,7 +8,7 @@ Attatch the  **plyInventoryPlayer** component to your plyGame character. Make su
 
 ## Step 2
 
-Assuming you’ve already created some Equipment types inside the equip editor. we can continue. If not have a look at the  [equip editor documentation](http://devdog.nl/documentation/equipment-editor/). First create a new object inside the Canvas and name it “CharacterWindow”. Next add the plyCharacterUI component to this object. All plyGame specific scripts can be found in the Add component menu under  **InventorySystem/Integrations/plyGame/***
+Assuming you’ve already created some Equipment types inside the equip editor. we can continue. If not have a look at the  [equip editor documentation](../../Editors/EquipmentEditor.md). First create a new object inside the Canvas and name it “CharacterWindow”. Next add the plyCharacterUI component to this object. All plyGame specific scripts can be found in the Add component menu under  **InventorySystem/Integrations/plyGame/***
 
 -   **Manually define collection:**  Because we know how many equip slots there will be, and want to manually define the layout we can define the collection by ourselves.
 -   **Only allow items of type:**  allows us to limit this collection to a certain time, equippable items in this case, after all equipping a consumable strawberry would be rather odd… even by my standards.

@@ -4,7 +4,7 @@
 
 The inventory UI can be used multiple times to allow the user to have multiple inventories.
 
-Each inventory can also be restricted to specific types. The InventoryUI script inherits from the ItemCollectionBase class, which is the default  [collection class.](http://devdog.nl/documentation/collections/)
+Each inventory can also be restricted to specific types. The InventoryUI script inherits from the ItemCollectionBase class, which is the default  [collection class.](Collections.md)
 
 All your collections have a collection name, this name is used to identify the collection, so make sure it’s unique, that’s up to you to manage.
 
@@ -17,14 +17,14 @@ All your collections have a collection name, this name is used to identify the c
 -   Loot priority defines the priority of the collection. For example when there are 2 inventories Inventory a with a priority of 10 and Inventory B with a priority of 80, all items will be stored in B (as long as allowed by restrictions)
 -   Initial collection size are the amount of slots created on the start of the game, this is the amount of slots you’ll have in your inventory.
 -   Use references is a default collection variable, when Use references is enabled items will not be placed inside the collection but a reference to that item will be made. For example the skill bar, items are not placed in it, just references to said item).
--   The Container is where you’re  [UI Item wrappers](http://devdog.nl/documentation/what-is-a-wrapper/)  (visual UI elements) are stored, this field (as you can see) is required.
+-   The Container is where you’re  UI Item wrappers (visual UI elements) are stored, this field (as you can see) is required.
 -   Only allow items of type is a useful feature that allows you to restrict an inventory (or any other collection) to only allow items of a certain type. For example a quest bag, that can only hold items that are quest related, crank up the priority and all your quest items will auto. be stored in a quest bag.
 -   Can drop, Can use are quite self explanatory.
 -   Manually define collection can be used if you don’t want to generate items on start. When enabled initial collection size will be ignored and it will be up to you to set the items. This can be useful if you know how many slots your collection will have, and wish to add custom behaviour to each slot (Character equipment for example).
 
 ![](Assets/InventoryUI.png)
 
-For more information on how to add and remove items from the inventory (or any other collection),  [have a look here.](http://devdog.nl/documentation/adding-removing-items/)
+For more information on how to add and remove items from the inventory (or any other collection),  [have a look here.](AddingRemovingItems.md)
 
 ## Multiple inventories
 

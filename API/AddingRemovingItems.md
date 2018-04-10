@@ -2,7 +2,7 @@
 
 ## Finding items
 
-Before you can add an item to the inventory you’ll need to have a reference to it first. This can be a prefab reference in the Unity inspector, or you can dynamically fetch the object through code. For example, maybe you want to add an item with the name “Sword 123”, or grab an item with ID 6.  [How to find items?](http://devdog.io/unity-assets/inventory-pro/documentation/2.5p/api/finding-items)
+Before you can add an item to the inventory you’ll need to have a reference to it first. This can be a prefab reference in the Unity inspector, or you can dynamically fetch the object through code. For example, maybe you want to add an item with the name “Sword 123”, or grab an item with ID 6.  [How to find items?](FindingItems.md)
 
 ## Adding an item to an inventory
 
@@ -20,7 +20,7 @@ It’s really that simple!
 
 ## Adding an item to a specific collection
 
-You can also add an item to a specific  [collection](http://devdog.io/unity-assets/inventory-pro/documentation/api/collections) like the bank, a specific inventory, etc.
+You can also add an item to a specific  [collection](Collections.md) like the bank, a specific inventory, etc.
 
 ```csharp
 

@@ -80,7 +80,7 @@ bool currencyRemoved = myCollection.RemoveCurrency(currencyID, myAmount);
 
 ### Tips and tricks
 
-A guide on how to [find items in any collection.](http://devdog.nl/documentation/finding-items/)
+A guide on how to [find items in any collection.](FindingItems.md)
 
 #### Get item count in collection
 

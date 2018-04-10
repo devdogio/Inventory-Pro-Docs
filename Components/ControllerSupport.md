@@ -22,4 +22,4 @@ Alternatively a timer can be added; this can be a great way to avoid using dialo
 
 ## Action helper
 
-To easily invoke methods from the UI without having to write any code there's an  [Action helper.](http://devdog.nl/documentation/action-helper/)
+To easily invoke methods from the UI without having to write any code there's an  [Action helper.](ActionHelper.md)

@@ -24,7 +24,7 @@ Once we've selected the UMAEquippableInventoryItem we'll be redirected to Step 2
 
 After we've hit Create item the item will be created and selected in the main editor. Here we can configure our newly created item.
 
-All information except for the "Item specific" is the same for all items. For more information about the  [item editor click here.](http://devdog.nl/documentation/main-editor-2/)
+All information except for the "Item specific" is the same for all items. For more information about the  [item editor click here.](../../Editors/ItemEditor.md)
 
 #### First things first
 
