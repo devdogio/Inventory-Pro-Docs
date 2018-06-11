@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-* [Getting Started](GettingStarted.md)
+* [Getting Started](GettingStarted/GettingStarted.md)
 
 ## FAQ
 
