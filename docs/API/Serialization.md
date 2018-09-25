@@ -32,37 +32,31 @@ Assume you'd like to save additional information about a collection you can of c
 
 ```
 
-As you might have noticed the ItemCollectionSerializationModel is used as a data carrier to store the deserialized data into. This object is completely marked virtual, so you can easily create an object that extends the ItemCollectionSerializationModel and add your own fields, collection filling, etc. (See below for example).
+As you might have noticed the ItemCollectionSerializationModel is used as a data carrier to store the deserialized data into. All methods on this class are marked virtual, so you can easily create an object that extends the ItemCollectionSerializationModel and add your own fields, collection filling, etc. (See below for example).
 
 ## ItemCollectionSerializationModel
+
+The serialization model represents a single collection and only stores the information you want to be serialized.
 
 The ItemCollectionSerializationModel can be extended easily by creating a new class, implementing ItemCollectionSerializationModel and adding / overriding the methods you'd like to change.  **Some example code:**
 
 ```csharp
 public class MyItemCollectionSerializationModel : ItemCollectionSerializationModel
 {
-    public override void FillItemsUsingCollection(ItemCollectionBase collection)
+    public override void FromCollection(ItemCollectionBase collection)
     {
-    	base.FillItemsUsingCollection(collection);
-
-    	// Fill extra data
-    }
-
-    public override void FillCurrenciesUsingCollection(ItemCollectionBase collection)
-    {
-    	base.FillCurrenciesUsingCollection(collection);
-
-    	// Fill extra data
+        base.FromCollection(collection);
+    
+        // Do extra work here
     }
     
-    public override void FillCollectionUsingThis(ItemCollectionBase collection)
+    public virtual void ToCollection(ItemCollectionBase collection)
     {
-        base.FillCollectionUsingThis(collection);
-
-        // Set data into collection using this object.
+        base.ToCollection(collection);
+        
+        // Do extra work here
     }
 }
-
 ```
 
 ## IItemsSerializer
@@ -70,5 +64,7 @@ public class MyItemCollectionSerializationModel : ItemCollectionSerializationMod
 The IItemsSerializer can be implemented to write your own serialization system. By default a JSON serializer is added, as JSON is currently the most popular data interchangeable format.
 
 ## CollectionSaverLoaderBase
+
+The collection saver loader instigates the saving and loading and is responsible for saving the serialized data 'somewhere'. The default uses the Unity PlayerPrefs.
 
 The abstract class CollectionSaverLoaderBase can be implemented into your own class to create a custom saving / loading system, such as for example, saving & loading to a web API. The nice thing about this system is that, if you were to choose to implement your own saving / loading and still wish to use JSON no changes to the serialization have to be made.
