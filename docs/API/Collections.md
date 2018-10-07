@@ -102,3 +102,14 @@ myCollection.GetEmptySlotsCount(); // Returns the amount of empty slots.
 ```csharp
 float weight = myCollection.GetWeight(); // Get the weight of all items in this collection combined.
 ```
+
+#### Get the item in a specific slot
+
+```csharp
+var slot = myCollection[index];
+
+if(slot != null) //the slot is not empty
+{
+   var item = slot.item;
+}
+```
