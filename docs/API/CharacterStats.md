@@ -37,4 +37,32 @@ public class MyStatsReader : MonoBehaviour
         Debug.Log("Value after transmutations: " + myStat.currentValue);
     }
 }
+
+## Tips and tricks
+Stats have events that are called when their values change. By subscribing to these events, you can insert your own logic.
+
+```csharp
+
+public class PlayerLogic : MonoBehaviour //On you player object
+{
+	public void healthStat; //Drag the health definition file in here
+	
+	public void Start()
+	{
+		GetComponent<Player>().inventoryPlayer.stats.Get(stat).OnValueChanged += DieWhenNoHealth;
+	}
+	
+	private void DieWhenNoHealth(IStat stat)
+	{
+		if(stat.currentValue < 0)   
+		{
+			Die(); 
+		}
+	}
+	
+	private void Die()
+	{
+	    //Logic to make the player die
+	}
+}
 ```
