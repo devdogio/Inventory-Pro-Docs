@@ -2,15 +2,22 @@
 
 This page will go over the common pitfalls new users fall into and how to resolve them.
 
+## Errors on import
+
+When importing a new Unity asset, follow [these practices](https://devdog.io/blog/importing-assets-into-unity-projects-9-best-practices/) to import your asset. 
+
+!!! warning
+​	We are aware of a conflict between InventoryPro and uMMORPG. Both packages use a Player class, unfortunately the one in uMMORPG is not in a namespace, and overrides the one in `InventoryPlayer`. There is nothing that we can do on our side about this. If you want to use these packages together, please contact the creators of uMMORPG to make the change. 
+
 ## Unable to pick up items
 
 When you are unable to pick up items, but do not receive any warnings or errors the player is most likely not set up correctly.
 
-When building a  **2D Game** make sure to use the Player2D Component instead of the regular Player component.
+When building a  **2D Game** make sure to use the Player2D Component instead of the regular Player component.  
 
 When building a  **3D Game** make sure to use the Player Component, not the Player2D Component.
 
-Make sure you have a PhysicsRaycaster attached to your main camera; And make sure to uncheck the IgnoreRaycasts layer, and optionally the TransparentFX.
+Make sure you have a PhysicsRaycaster attached to your main camera; And make sure to uncheck the IgnoreRaycasts layer, and optionally the TransparentFX. For 2D games, you will need a Physics2DRaycaster instead.
 
 ![](Assets/PhysicsRaycaster.png)
 
