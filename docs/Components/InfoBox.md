@@ -11,7 +11,7 @@ The InfoBoxUI works as a seperate module and can be removed without affecting ot
 ### Coding
 
 !!! note
-	Custom item types supply the InfoBoxUI with information by overriding the GetInfo() method.
+​	Custom item types supply the InfoBoxUI with information by overriding the GetInfo() method.
 
 ```csharp
 public UnityEngine.UI.Text myTextField;
@@ -24,3 +24,15 @@ protected override void Repaint(InventoryItemBase item, LinkedList rows)
 	myTextField.text = "ABC"; // Add our own repainting
 }
 ```
+
+The `InfoBoxUI` has various behaviors for various input scenarios. In some cases, you may not want any behaviors and simply control display of the box yourself. In this case, you can define your own class that extends from `InforBoxUI` and defines an empty Update method, like this:
+
+```csharp
+public class MyInfoBoxUI : InfoBoxUI
+{
+   public void Update()
+   {} //Do nothing
+}
+```
+
+You can feed an item to an info box using the `HandleInfoBox`method.
