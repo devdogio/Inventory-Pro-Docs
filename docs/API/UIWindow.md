@@ -29,8 +29,7 @@ You can add your own actions whenever a window is shown or hidden. For example, 
 
 ## Events
 
-!!! tip
-
+!!! note
 ​    You can also add handlers to **OnShow** and **OnHide** on the window in the inspector. 
 
 ```csharp
