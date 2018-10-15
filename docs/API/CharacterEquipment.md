@@ -5,7 +5,7 @@ In many cases you might want to add custom logic whenever an item is equipped, o
 ## Using events
 
 !!! note
-​    Remember to add `using Devdog.InventoryPro;` to the top of your script.
+	Remember to add `using Devdog.InventoryPro;` to the top of your script.
 
 ```csharp
 public CharacterUI characterUI; // Assign in the inspector.
@@ -30,7 +30,7 @@ private void CharacterUI_ItemEquipped(IEnumerable items, uint amount, bool cameF
 ## Get equipped item directly
 
 !!! note
-​    Remember to add `using Devdog.InventoryPro;` to the top of your script.
+	Remember to add `using Devdog.InventoryPro;` to the top of your script.
 
 ```csharp
 public CharacterUI characterUI; // Assign in the inspector.
