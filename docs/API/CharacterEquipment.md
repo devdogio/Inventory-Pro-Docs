@@ -3,25 +3,29 @@
 In many cases you might want to add custom logic whenever an item is equipped, or to figure out what items are equipped whenever you need it in your code. This can both be done very quickly, and very easily.
 
 ## Using events
-
-!!! note
-	Remember to add `using Devdog.InventoryPro;` and `using System.Linq;` to the top of your script.
-
 ```csharp
-public CharacterUI characterUI; // Assign in the inspector.
+using System.Collections.Generic;
+using Devdog.InventoryPro;
+using UnityEngine;
+using System.Linq;
 
-protected virtual void Awake()
+public class CharacterEquipmentExample : MonoBehaviour
 {
-    characterUI.OnAddedItem += CharacterUI_ItemEquipped;
-}
+    public CharacterUI characterUI; // Assign in the inspector.
 
-private void CharacterUI_ItemEquipped(IEnumerable items, uint amount, bool cameFromCollection)
-{
-    var equippable = items.FirstOrDefault() as EquippableInventoryItem;
-    if(equippable != null)
+    protected virtual void Awake()
     {
-        // Item is an equippable, check values.
-        // equippable.category.name, etc...
+        characterUI.OnAddedItem += CharacterUI_ItemEquipped;
+    }
+
+    private void CharacterUI_ItemEquipped(IEnumerable<InventoryItemBase> items, uint amount, bool cameFromCollection)
+    {
+        var equippable = items.FirstOrDefault() as EquippableInventoryItem;
+        if (equippable != null)
+        {
+            // Item is an equippable, check values.
+            // equippable.category.name, etc...
+        }
     }
 }
 
