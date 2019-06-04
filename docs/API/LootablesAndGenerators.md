@@ -23,6 +23,20 @@ generator.minRequiredLevel = 5; // Minimal level of generates items has to be 5.
 var myLoot = generator.Generate(2,4); // Generate 2 to 4 items, note that there's also .Generate(count); for a fixed amount
 ```
 
+To add one or more restrictions the `BasicItemGenerator` contains multiple properties, like `onlyWithPoperty`, `onlyOfCategory`, `onlyOfRarity` and `onlyOfType`.
+To pick items only from a specified category we can add the following lines to the previous example:
+
+```csharp
+// Get a reference to a category
+var category = ItemManager.database.categories.FirstOrDefault(c => c.name == "Food");
+
+// or by ID:
+//var category = ItemManager.database.categories.FirstOrDefault(c => c.ID == 3);
+
+// set up the category restriction by adding it to the onlyOfCategory collection
+generator.onlyOfCategory.Add(category);
+```
+
 ## Setting the items in the loot window
 
 Next you can set the loot in the loot window using the following code:
