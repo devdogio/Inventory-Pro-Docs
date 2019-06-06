@@ -103,6 +103,24 @@ myCollection.GetEmptySlotsCount(); // Returns the amount of empty slots.
 float weight = myCollection.GetWeight(); // Get the weight of all items in this collection combined.
 ```
 
+### Get the total weight of all items in the player's inventory
+
+```csharp
+float sumWeight = 0.0f;
+foreach (var col in InventoryManager.GetLootToCollections())
+    sumWeight += col.GetWeight();
+```
+
+### Get the total weight of all items equipped by the player
+
+```csharp
+float sumWeight = 0.0f;
+foreach (var col in InventoryManager.GetEquipToCollections())
+    sumWeight += col.GetWeight();
+```
+
+The total weight that the player carries is the sum of the weight of `GetLootToCollections` and `GetEquipToCollections`
+
 #### Get the item in a specific slot
 
 ```csharp
